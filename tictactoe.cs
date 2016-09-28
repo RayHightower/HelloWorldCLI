@@ -23,12 +23,12 @@ public class TicTacToe
     System.Console.WriteLine(" 7 | 8 | 9 ");
   }
 
-  /*
-  static void GrabMove()
+  static int GrabMove()
   {
-    move = Console.Read();
+    move = Console.Read() - 48;
+
+    return move;
   }
-  */
 
   public static void Main()
   {
@@ -41,7 +41,7 @@ public class TicTacToe
     {
       System.Console.WriteLine("\nIt's X's move. Which cell (1 thru 9) should X mark?");
 
-      move = Console.Read() - 48;
+      GrabMove();
 
       DrawGrid();
 
