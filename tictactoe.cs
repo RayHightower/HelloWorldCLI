@@ -41,7 +41,7 @@ public class TicTacToe
       else
       {
         UserCharacter = Convert.ToChar(move + 48);
-        System.Console.WriteLine("{0} is an invalid move. Please try again.", UserCharacter);
+        System.Console.WriteLine("\n{0} is an invalid move. Please try again.", UserCharacter);
       }
     }
   }
