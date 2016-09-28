@@ -104,12 +104,14 @@ public class TicTacToe
 
       if (move > 0 && move < 10)
         {
-          return move;
+          if (grid[move].Equals('X') || grid[move].Equals('O'))
+          {
+            System.Console.WriteLine("\nNice try, buster. {0} is already occupied. Gotta try again.", move);
+          }
+
+          else return move;
         }
-        else if (grid[move].Equals('X') || grid[move].Equals('O'))
-        {
-          System.Console.WriteLine("\nNice try, buster. {0} is already occupied. Gotta try again.", move);
-        }
+        else 
         {
           UserCharacter = Convert.ToChar(move + 48);
           System.Console.WriteLine("\n{0} is an invalid move. Please try again.", UserCharacter);
