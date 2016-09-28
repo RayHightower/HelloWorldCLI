@@ -15,7 +15,7 @@ public class TicTacToe
   static void DrawGrid()
   {
     DrawPosts();
-    DrawHorizontal;
+    DrawHorizontal();
     DrawPosts();
     DrawHorizontal();
   }
