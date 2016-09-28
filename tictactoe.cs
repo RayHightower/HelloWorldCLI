@@ -10,7 +10,7 @@ public class TicTacToe
 
   static void DrawPosts()
   {
-    System.Console.WriteLine("    |    |    ");
+    System.Console.WriteLine(" 1 | 2 | 3 ");
   }
 
 
@@ -45,11 +45,16 @@ public class TicTacToe
 
       DrawGrid();
 
+      System.Console.WriteLine("\nX chose: {0}", move);
+
+
       System.Console.WriteLine("\nIt's O's move. Which cell (1 thru 9) should O mark?");
 
       move = Console.Read();
 
       DrawGrid();
+
+      System.Console.WriteLine("\nY chose: {0}", move);
 
     }
 
