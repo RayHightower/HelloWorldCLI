@@ -23,7 +23,7 @@ public class TicTacToe
 
   public static void Main()
   {
-    System.Console.WriteLine("Welcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
+    System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
     DrawGrid();
   }
 }
