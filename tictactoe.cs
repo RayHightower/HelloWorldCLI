@@ -27,6 +27,7 @@ public class TicTacToe
   {
 
     int move;
+    char UserCharacter;
 
     while (true)
     {
@@ -39,7 +40,8 @@ public class TicTacToe
       }
       else
       {
-        System.Console.WriteLine("{0} is an invalid move. Pleaes try again.", move);
+        UserCharacter = Convert.ToChar(move + 48);
+        System.Console.WriteLine("{0} is an invalid move. Please try again.", UserCharacter);
       }
     }
   }
