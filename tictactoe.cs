@@ -39,7 +39,7 @@ public class TicTacToe
       }
       else
       {
-        System.Console.WriteLine("Invalid move. Pleaes try again.");
+        System.Console.WriteLine("{0} is an invalid move. Pleaes try again.", move);
       }
     }
   }
