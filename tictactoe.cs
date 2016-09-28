@@ -131,7 +131,6 @@ public class TicTacToe
       move = GrabMove();
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
-      DrawGrid(grid);
       DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
@@ -145,7 +144,6 @@ public class TicTacToe
       move = GrabMove();
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
-      DrawGrid(grid);
       DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
