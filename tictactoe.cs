@@ -28,9 +28,20 @@ public class TicTacToe
 
     int move;
 
+    while (true)
+    {
+
     move = Console.Read() - 48;
 
-    return move;
+    if (move > 0 && move < 10)
+      {
+        return move;
+      }
+      else
+      {
+        System.Console.WriteLine("Invalid move. Pleaes try again.");
+      }
+    }
   }
 
   public static void Main()
@@ -50,14 +61,13 @@ public class TicTacToe
 
       System.Console.WriteLine("\nX chose: {0}", move);
 
-
       System.Console.WriteLine("\nIt's O's move. Which cell (1 thru 9) should O mark?");
 
-      move = Console.Read() - 48;
+      move = GrabMove();
 
       DrawGrid();
 
-      System.Console.WriteLine("\nY chose: {0}", move);
+      System.Console.WriteLine("\nO chose: {0}", move);
 
     }
 
