@@ -113,7 +113,7 @@ public class TicTacToe
       DrawGrid(grid);
       if (CheckWinner(grid))
           {
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Blue;
             System.Console.WriteLine("\n*** {0} wins! ****", player);
             break;
           }
