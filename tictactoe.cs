@@ -8,7 +8,7 @@ public class TicTacToe
 
   static void DrawPosts()
   {
-    System.Console.WriteLine("|   |    |   |");
+    System.Console.WriteLine("    |    |    ");
   }
 
 
@@ -18,11 +18,12 @@ public class TicTacToe
     DrawHorizontal();
     DrawPosts();
     DrawHorizontal();
+    DrawPosts();
   }
 
   public static void Main()
   {
-    System.Console.WriteLine("Hello World!!!!!");
+    System.Console.WriteLine("Welcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
     DrawGrid();
   }
 }
