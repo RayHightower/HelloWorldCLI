@@ -21,9 +21,31 @@ public class TicTacToe
     DrawPosts();
   }
 
+  static void GrabMove()
+  {
+    move = Console.Read();
+  }
+
   public static void Main()
   {
     System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
     DrawGrid();
+
+    while (true)
+    {
+      System.Console.WriteLine("\nIt's X's move. Which cell (1 thru 9) should X mark?");
+
+      GrabMove();
+
+      DrawGrid;
+
+      System.Console.WriteLine("\nIt's O's move. Which cell (1 thru 9) should O mark?");
+
+      GrabMove();
+
+      DrawGrid;
+
+    }
+
   }
 }
