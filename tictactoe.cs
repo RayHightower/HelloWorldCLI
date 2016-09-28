@@ -40,7 +40,12 @@ public class TicTacToe
     bool winner = false;
 
     // check horizontal
+    if (grid[1] == grid[2] && grid[2] == grid[3]) winner = true;
+    if (grid[4] == grid[5] && grid[5] == grid[6]) winner = true;
+    if (grid[7] == grid[8] && grid[8] == grid[9]) winner = true;
+
     // check vertical
+
     // check diagonal
 
 
