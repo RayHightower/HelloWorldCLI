@@ -29,6 +29,8 @@ public class TicTacToe
 
   static void DrawColorGrid(char[] grid)
   {
+    System.Console.WriteLine("\n");
+
     for (int i = 1; i<10; i++)
     {
       if (grid[i].Equals('X'))
