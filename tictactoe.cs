@@ -8,11 +8,6 @@ public class TicTacToe
     System.Console.WriteLine("--------------");
   }
 
-  static void DrawPosts()
-  {
-    System.Console.WriteLine(" 1 | 2 | 3 ");
-  }
-
   static char[] LoadGrid(char[] grid)
   {
     for (int i = 1; i<10; i++)
