@@ -12,7 +12,7 @@ public class TicTacToe
   }
 */
 
-  public static void DrawGrid()
+  static void DrawGrid()
   {
     System.Console.WriteLine("|   |    |   |");
     System.Console.WriteLine("--------------");
@@ -21,8 +21,8 @@ public class TicTacToe
     DrawHorizontal;
     DrawPosts();
     DrawHorizontal();
-  }
 */
+  }
 
   public static void Main()
   {
