@@ -35,6 +35,18 @@ public class TicTacToe
     return grid;
   }
 
+  static bool CheckWinner(grid);
+  {
+    bool winner = false;
+
+    // check horizontal
+    // check vertical
+    // check diagonal
+
+
+    return winner;
+  }
+
   static int GrabMove()
   {
 
@@ -76,6 +88,11 @@ public class TicTacToe
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
       DrawGrid(grid);
+      if (CheckWinner(grid))
+          {
+            System.Console.WriteLine("\n*** {0} wins! ****", player);
+            break;
+          }
 
       player = 'O';
       System.Console.WriteLine("\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
@@ -83,6 +100,11 @@ public class TicTacToe
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
       DrawGrid(grid);
+      if (CheckWinner(grid))
+          {
+            System.Console.WriteLine("\n*** {0} wins! ****", player);
+            break;
+          }
 
     }
 
