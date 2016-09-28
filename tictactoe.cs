@@ -16,7 +16,7 @@ public class TicTacToe
 
   static void DrawGrid()
   {
-    System.Console.WriteLine(" 1 | 2 | 3 ");
+    System.Console.WriteLine("\n 1 | 2 | 3 ");
     DrawHorizontal();
     System.Console.WriteLine(" 4 | 5 | 6 ");
     DrawHorizontal();
