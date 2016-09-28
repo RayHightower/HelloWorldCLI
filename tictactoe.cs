@@ -15,20 +15,20 @@ public class TicTacToe
 
   static char[] LoadGrid(char[] grid)
   {
-    grid[1] = "1";
-    grid[2] = "2";
-    grid[3] = "3";
+    grid[1] = (char)49;
+    grid[2] = (char)50;
+    grid[3] = (char)51;
 
     return grid;
   }
 
   static void DrawGrid(char[] grid)
   {
-    System.Console.WriteLine("\n {0} | {0} | {0} ", grid[1], grid[2], grid[3]);
+    System.Console.WriteLine("\n {0} | {1} | {2} ", grid[1], grid[2], grid[3]);
     DrawHorizontal();
+    System.Console.WriteLine("\n {0} | {1} | {2} ", grid[4], grid[5], grid[6]);
     System.Console.WriteLine(" 4 | 5 | 6 ");
-    DrawHorizontal();
-    System.Console.WriteLine(" 7 | 8 | 9 ");
+    System.Console.WriteLine("\n {0} | {1} | {2} ", grid[7], grid[8], grid[9]);
   }
 
   static int GrabMove()
@@ -60,7 +60,7 @@ public class TicTacToe
     char[] grid = new char[10];
 
     System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
-    
+
     LoadGrid(grid);
 
     DrawGrid(grid);
