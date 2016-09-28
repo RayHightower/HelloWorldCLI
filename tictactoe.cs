@@ -55,7 +55,7 @@ public class TicTacToe
       if (i % 3 == 0 && i % 9 != 0)
       {
         Console.ForegroundColor = ConsoleColor.White;
-        System.Console.WriteLine("\n--------------");
+        System.Console.WriteLine("\n---------------");
       }
     }
 
@@ -130,12 +130,11 @@ public class TicTacToe
       System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove(grid);
       UpdateGrid(move, player, grid);
-      System.Console.WriteLine("\n{0} chose: {1}", player, move);
       DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
             Console.ForegroundColor = ConsoleColor.Red;
-            System.Console.WriteLine("\n*** {0} wins! ****", player);
+            System.Console.WriteLine("\n\n*** {0} wins! ****", player);
             break;
           }
 
@@ -143,12 +142,11 @@ public class TicTacToe
       System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove(grid);
       UpdateGrid(move, player, grid);
-      System.Console.WriteLine("\n{0} chose: {1}", player, move);
       DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            System.Console.WriteLine("\n*** {0} wins! ****", player);
+            System.Console.WriteLine("\n\n*** {0} wins! ****", player);
             break;
           }
     }
