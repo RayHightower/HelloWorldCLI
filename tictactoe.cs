@@ -121,6 +121,7 @@ public class TicTacToe
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
       DrawGrid(grid);
+      DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -134,6 +135,7 @@ public class TicTacToe
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
       DrawGrid(grid);
+      DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
             Console.ForegroundColor = ConsoleColor.Blue;
