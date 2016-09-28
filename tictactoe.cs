@@ -31,11 +31,11 @@ public class TicTacToe
   {
     for (int i = 1; i<10; i++)
     {
-      if (grid[i].Equals("X"))
+      if (grid[i].Equals('X'))
       {
         Console.ForegroundColor = ConsoleColor.Green;
       }
-      else if (grid[i].Equals("O"))
+      else if (grid[i].Equals('O'))
       {
         Console.ForegroundColor = ConsoleColor.Blue;
       }
