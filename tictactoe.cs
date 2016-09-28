@@ -41,7 +41,7 @@ public class TicTacToe
     {
       System.Console.WriteLine("\nIt's X's move. Which cell (1 thru 9) should X mark?");
 
-      move = Console.Read();
+      move = Console.Read() - 48;
 
       DrawGrid();
 
@@ -50,7 +50,7 @@ public class TicTacToe
 
       System.Console.WriteLine("\nIt's O's move. Which cell (1 thru 9) should O mark?");
 
-      move = Console.Read();
+      move = Console.Read() - 48;
 
       DrawGrid();
 
