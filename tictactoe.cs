@@ -33,7 +33,7 @@ public class TicTacToe
     {
       if (grid[i].Equals('X'))
       {
-        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.ForegroundColor = ConsoleColor.Magenta;
       }
       else if (grid[i].Equals('O'))
       {
@@ -134,7 +134,7 @@ public class TicTacToe
       DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Magenta;
             System.Console.WriteLine("\n*** {0} wins! ****", player);
             break;
           }
