@@ -33,7 +33,7 @@ public class TicTacToe
     {
       if (grid[i].Equals('X'))
       {
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.ForegroundColor = ConsoleColor.Red;
       }
       else if (grid[i].Equals('O'))
       {
@@ -91,7 +91,7 @@ public class TicTacToe
     return winner;
   }
 
-  static int GrabMove()
+  static int GrabMove(char[] grid)
   {
 
     int move;
@@ -102,7 +102,7 @@ public class TicTacToe
 
       move = Console.Read() - 48;
 
-      if (move > 0 && move < 10)
+      if (move > 0 && move < 10 )
         {
           return move;
         }
@@ -128,20 +128,20 @@ public class TicTacToe
     {
       player = 'X';
       System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
-      move = GrabMove();
+      move = GrabMove(grid);
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
       DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
-            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.ForegroundColor = ConsoleColor.Red;
             System.Console.WriteLine("\n*** {0} wins! ****", player);
             break;
           }
 
       player = 'O';
       System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
-      move = GrabMove();
+      move = GrabMove(grid);
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
       DrawColorGrid(grid);
@@ -151,8 +151,6 @@ public class TicTacToe
             System.Console.WriteLine("\n*** {0} wins! ****", player);
             break;
           }
-
     }
-
   }
 }
