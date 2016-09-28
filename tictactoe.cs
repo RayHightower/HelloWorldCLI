@@ -27,6 +27,29 @@ public class TicTacToe
     System.Console.WriteLine(" {0} | {1} | {2} ", grid[7], grid[8], grid[9]);
   }
 
+  static void DrawColorGrid(char[] grid)
+  {
+    for (int i = 1; i<10; i++)
+    {
+      if (grid[i].Equals("X"))
+      {
+        Console.ForegroundColor = ConsoleColor.Green;
+      }
+      else if (grid[i].Equals("O"))
+      {
+        Console.ForegroundColor = ConsoleColor.Blue;
+      }
+      else
+      {
+        Console.ForegroundColor = ConsoleColor.White;
+      }
+
+      System.Console.Write(" {0} ", grid[i]);
+      System.Console.Write(" | ");
+    }
+
+  }
+
   static char[] UpdateGrid(int move, char player, char[] grid)
   {
 
