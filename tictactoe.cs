@@ -127,7 +127,7 @@ public class TicTacToe
     while (true)
     {
       player = 'X';
-      System.Console.WriteLine("\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
+      System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove();
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
@@ -140,7 +140,7 @@ public class TicTacToe
           }
 
       player = 'O';
-      System.Console.WriteLine("\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
+      System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove();
       UpdateGrid(move, player, grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
