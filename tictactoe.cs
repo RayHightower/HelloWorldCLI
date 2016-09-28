@@ -46,17 +46,17 @@ public class TicTacToe
     while (true)
     {
 
-    move = Console.Read() - 48;
+      move = Console.Read() - 48;
 
-    if (move > 0 && move < 10)
-      {
-        return move;
-      }
-      else
-      {
-        UserCharacter = Convert.ToChar(move + 48);
-        System.Console.WriteLine("\n{0} is an invalid move. Please try again.", UserCharacter);
-      }
+      if (move > 0 && move < 10)
+        {
+          return move;
+        }
+        else
+        {
+          UserCharacter = Convert.ToChar(move + 48);
+          System.Console.WriteLine("\n{0} is an invalid move. Please try again.", UserCharacter);
+        }
     }
   }
 
