@@ -1,6 +1,6 @@
 public class TicTacToe
 {
-
+/*
   public static void DrawHorizontal()
   {
     System.Console.WriteLine("--------------");
@@ -18,10 +18,13 @@ public class TicTacToe
     DrawPosts();
     DrawHorizontal();
   }
+*/
 
   public static void Main()
   {
     System.Console.WriteLine("Hello World!!!!!");
-    DrawGrid();
+//    DrawGrid();
+    System.Console.WriteLine("|   |    |   |");
+    System.Console.WriteLine("--------------");
   }
 }
