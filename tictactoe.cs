@@ -10,9 +10,13 @@ public class TicTacToe
   {
     System.Console.WriteLine("|   |    |   |");
   }
+*/
 
   public static void DrawGrid()
   {
+    System.Console.WriteLine("|   |    |   |");
+    System.Console.WriteLine("--------------");
+/*
     DrawPosts();
     DrawHorizontal;
     DrawPosts();
@@ -23,8 +27,6 @@ public class TicTacToe
   public static void Main()
   {
     System.Console.WriteLine("Hello World!!!!!");
-//    DrawGrid();
-    System.Console.WriteLine("|   |    |   |");
-    System.Console.WriteLine("--------------");
+    DrawGrid();
   }
 }
