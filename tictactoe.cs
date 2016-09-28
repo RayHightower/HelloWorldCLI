@@ -27,7 +27,7 @@ public class TicTacToe
     System.Console.WriteLine("\n {0} | {1} | {2} ", grid[1], grid[2], grid[3]);
     DrawHorizontal();
     System.Console.WriteLine("\n {0} | {1} | {2} ", grid[4], grid[5], grid[6]);
-    System.Console.WriteLine(" 4 | 5 | 6 ");
+    DrawHorizontal();
     System.Console.WriteLine("\n {0} | {1} | {2} ", grid[7], grid[8], grid[9]);
   }
 
