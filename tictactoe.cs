@@ -13,12 +13,12 @@ public class TicTacToe
     System.Console.WriteLine(" 1 | 2 | 3 ");
   }
 
-  static int LoadGrid(int grid)
+  static int LoadGrid(int[] grid)
   {
 
   }
 
-  static void DrawGrid(int grid)
+  static void DrawGrid(int[] grid)
   {
     System.Console.WriteLine("\n {0} | {0} | {0} ", grid[1], grid[2], grid[3]);
     DrawHorizontal();
