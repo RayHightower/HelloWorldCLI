@@ -16,11 +16,11 @@ public class TicTacToe
 
   static void DrawGrid()
   {
-    DrawPosts();
+    System.Console.WriteLine(" 1 | 2 | 3 ");
     DrawHorizontal();
-    DrawPosts();
+    System.Console.WriteLine(" 4 | 5 | 6 ");
     DrawHorizontal();
-    DrawPosts();
+    System.Console.WriteLine(" 7 | 8 | 9 ");
   }
 
   /*
