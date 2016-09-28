@@ -35,6 +35,7 @@ public class TicTacToe
   static char[] UpdateGrid(int move, char player, char[] grid)
   {
 
+    grid[move] = player;
 
     return grid;
   }
@@ -81,14 +82,14 @@ public class TicTacToe
       move = GrabMove(); // Grab the move.
       UpdateGrid(move, player, grid);
       DrawGrid(grid);
-      System.Console.WriteLine("\nX chose: {0}", move);
+      System.Console.WriteLine("\n{0} chose: {1}", player, move);
 
       player = 'O';
       System.Console.WriteLine("\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove();
       UpdateGrid(move, player, grid);
       DrawGrid(grid);
-      System.Console.WriteLine("\nO chose: {0}", move);
+      System.Console.WriteLine("\n{0} chose: {1}", player, move);
 
     }
 
