@@ -1,3 +1,5 @@
+using System;
+
 public class TicTacToe
 {
 
@@ -21,13 +23,17 @@ public class TicTacToe
     DrawPosts();
   }
 
+  /*
   static void GrabMove()
   {
     move = Console.Read();
   }
+  */
 
   public static void Main()
   {
+    int move;
+
     System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
     DrawGrid();
 
@@ -35,15 +41,15 @@ public class TicTacToe
     {
       System.Console.WriteLine("\nIt's X's move. Which cell (1 thru 9) should X mark?");
 
-      GrabMove();
+      move = Console.Read();
 
-      DrawGrid;
+      DrawGrid();
 
       System.Console.WriteLine("\nIt's O's move. Which cell (1 thru 9) should O mark?");
 
-      GrabMove();
+      move = Console.Read();
 
-      DrawGrid;
+      DrawGrid();
 
     }
 
