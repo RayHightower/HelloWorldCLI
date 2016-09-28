@@ -54,11 +54,12 @@ public class TicTacToe
   public static void Main()
   {
     int move;
-    int[] grid;
+    int[] grid = new int[10];
 
     System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
     
-    grid = LoadGrid(grid);
+    // grid = [ 0 1 2 3 4 5 6 7 8 9 10];
+
     DrawGrid(grid);
 
     while (true)
