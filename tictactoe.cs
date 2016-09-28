@@ -13,10 +13,14 @@ public class TicTacToe
     System.Console.WriteLine(" 1 | 2 | 3 ");
   }
 
-
-  static void DrawGrid()
+  static int LoadGrid(int grid)
   {
-    System.Console.WriteLine("\n 1 | 2 | 3 ");
+
+  }
+
+  static void DrawGrid(int grid)
+  {
+    System.Console.WriteLine("\n {0} | {0} | {0} ", grid[1], grid[2], grid[3]);
     DrawHorizontal();
     System.Console.WriteLine(" 4 | 5 | 6 ");
     DrawHorizontal();
@@ -49,9 +53,12 @@ public class TicTacToe
   public static void Main()
   {
     int move;
+    int[] grid;
 
     System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
-    DrawGrid();
+    
+    grid = LoadGrid(grid);
+    DrawGrid(grid);
 
     while (true)
     {
@@ -59,7 +66,7 @@ public class TicTacToe
 
       move = GrabMove();
 
-      DrawGrid();
+      DrawGrid(grid);
 
       System.Console.WriteLine("\nX chose: {0}", move);
 
@@ -67,7 +74,7 @@ public class TicTacToe
 
       move = GrabMove();
 
-      DrawGrid();
+      DrawGrid(grid);
 
       System.Console.WriteLine("\nO chose: {0}", move);
 
