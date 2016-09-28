@@ -13,13 +13,16 @@ public class TicTacToe
     System.Console.WriteLine(" 1 | 2 | 3 ");
   }
 
-  static int[] LoadGrid(int[] grid)
+  static char[] LoadGrid(char[] grid)
   {
+    grid[1] = "1";
+    grid[2] = "2";
+    grid[3] = "3";
 
     return grid;
   }
 
-  static void DrawGrid(int[] grid)
+  static void DrawGrid(char[] grid)
   {
     System.Console.WriteLine("\n {0} | {0} | {0} ", grid[1], grid[2], grid[3]);
     DrawHorizontal();
@@ -54,11 +57,11 @@ public class TicTacToe
   public static void Main()
   {
     int move;
-    int[] grid = new int[10];
+    char[] grid = new char[10];
 
     System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
     
-    // grid = [ 0 1 2 3 4 5 6 7 8 9 10];
+    LoadGrid(grid);
 
     DrawGrid(grid);
 
