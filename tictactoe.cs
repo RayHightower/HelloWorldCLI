@@ -35,7 +35,7 @@ public class TicTacToe
     return grid;
   }
 
-  static bool CheckWinner(grid);
+  static bool CheckWinner(char[] grid)
   {
     bool winner = false;
 
