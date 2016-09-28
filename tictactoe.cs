@@ -65,26 +65,24 @@ public class TicTacToe
     char player;
 
     System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
-
     LoadGrid(grid);
-
     DrawGrid(grid);
 
     while (true)
     {
       player = 'X';
       System.Console.WriteLine("\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
-      move = GrabMove(); // Grab the move.
+      move = GrabMove();
       UpdateGrid(move, player, grid);
-      DrawGrid(grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
+      DrawGrid(grid);
 
       player = 'O';
       System.Console.WriteLine("\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove();
       UpdateGrid(move, player, grid);
-      DrawGrid(grid);
       System.Console.WriteLine("\n{0} chose: {1}", player, move);
+      DrawGrid(grid);
 
     }
 
