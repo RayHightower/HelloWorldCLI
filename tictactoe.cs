@@ -95,20 +95,21 @@ public class TicTacToe
 
   static int GrabMove(char[] grid)
   {
-
     int move;
     char UserCharacter;
 
     while (true)
     {
-
       move = Console.Read() - 48;
 
-      if (move > 0 && move < 10 )
+      if (move > 0 && move < 10)
         {
           return move;
         }
-        else
+        else if (grid[move].Equals('X') || grid[move].Equals('O'))
+        {
+          System.Console.WriteLine("\nNice try, buster. {0} is already occupied. Gotta try again.", move);
+        }
         {
           UserCharacter = Convert.ToChar(move + 48);
           System.Console.WriteLine("\n{0} is an invalid move. Please try again.", UserCharacter);
