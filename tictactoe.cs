@@ -33,7 +33,7 @@ public class TicTacToe
     {
       if (grid[i].Equals('X'))
       {
-        Console.ForegroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Red;
       }
       else if (grid[i].Equals('O'))
       {
@@ -45,7 +45,18 @@ public class TicTacToe
       }
 
       System.Console.Write(" {0} ", grid[i]);
-      System.Console.Write(" | ");
+
+      if (i % 3 != 0)
+      {
+        Console.ForegroundColor = ConsoleColor.White;
+        System.Console.Write(" | ");
+      }
+
+      if (i % 3 == 0 && i % 9 != 0)
+      {
+        Console.ForegroundColor = ConsoleColor.White;
+        System.Console.WriteLine("\n--------------");
+      }
     }
 
   }
@@ -124,7 +135,7 @@ public class TicTacToe
       DrawColorGrid(grid);
       if (CheckWinner(grid))
           {
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Red;
             System.Console.WriteLine("\n*** {0} wins! ****", player);
             break;
           }
