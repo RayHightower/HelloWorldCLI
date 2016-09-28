@@ -51,13 +51,13 @@ public class TicTacToe
       if (i % 3 != 0)
       {
         Console.ForegroundColor = ConsoleColor.White;
-        System.Console.Write(" | ");
+        System.Console.Write("|");
       }
 
       if (i % 3 == 0 && i % 9 != 0)
       {
         Console.ForegroundColor = ConsoleColor.White;
-        System.Console.WriteLine("\n---------------");
+        System.Console.WriteLine("\n-----------");
       }
     }
 
@@ -124,7 +124,7 @@ public class TicTacToe
 
     System.Console.WriteLine("\nWelcome to Tic Tac Toe\nYou know the rules. Here's the grid.\n");
     LoadGrid(grid);
-    DrawGrid(grid);
+    DrawColorGrid(grid);
 
     while (true)
     {
