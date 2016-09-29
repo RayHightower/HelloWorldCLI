@@ -14,7 +14,6 @@ public class TicTacToe
     {
       grid[i] = (char)(i+48);
     }
-
     return grid;
   }
 
@@ -60,7 +59,6 @@ public class TicTacToe
         System.Console.WriteLine("\n-----------");
       }
     }
-
   }
 
   static char[] UpdateGrid(int move, char player, char[] grid)
