@@ -132,6 +132,7 @@ public class TicTacToe
     while (true)
     {
       player = 'X';
+      Console.ForegroundColor = ConsoleColor.White;
       System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove(grid);
       UpdateGrid(move, player, grid);
@@ -144,6 +145,7 @@ public class TicTacToe
           }
 
       player = 'O';
+      Console.ForegroundColor = ConsoleColor.White;
       System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove(grid);
       UpdateGrid(move, player, grid);
