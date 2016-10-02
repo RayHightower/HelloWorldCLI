@@ -138,7 +138,7 @@ public class TicTacToe
       if (CheckWinner(grid))
           {
             Console.ForegroundColor = ConsoleColor.Red;
-            System.Console.WriteLine("\n\n*** {0} wins! ****", player);
+            System.Console.WriteLine("\n\n*** {0} wins! ****\n", player);
             break;
           }
 
@@ -151,7 +151,7 @@ public class TicTacToe
       if (CheckWinner(grid))
           {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            System.Console.WriteLine("\n\n*** {0} wins! ****", player);
+            System.Console.WriteLine("\n\n*** {0} wins! ****\n", player);
             break;
           }
     }
