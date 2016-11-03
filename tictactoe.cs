@@ -135,6 +135,7 @@ public class TicTacToe
   public static void Main()
   {
     int move;
+    int depth;
     char[] grid = new char[10];
     char player;
 
