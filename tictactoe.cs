@@ -124,8 +124,8 @@ public class TicTacToe
 
     score = 1;
 
-    System.Console.WriteLine("\nMaximum game tree depth = {0}.\n", leaf);
-    System.Console.WriteLine("\nInside the **BRAIN of MINIMAX**\n");
+    System.Console.WriteLine("\n\nInside the **BRAIN of MINIMAX**");
+    System.Console.WriteLine("Maximum game tree depth = {0} and the grid looks like this:", leaf);
     DrawColorGrid(grid);
 
     return score;
