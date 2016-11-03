@@ -117,6 +117,16 @@ public class TicTacToe
     }
   }
 
+  static int minimax(char[] grid, char player, int depth)
+  {
+    int score;
+
+    score = 1;
+
+    return score;
+  }
+
+
   public static void Main()
   {
     int move;
