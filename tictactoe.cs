@@ -120,8 +120,11 @@ public class TicTacToe
   static int minimax(char[] grid, char player, int depth)
   {
     int score;
+    int leaf = 9; // maximum depth for a tic tac toe game tree
 
     score = 1;
+
+    System.Console.WriteLine("\nMaximum game tree depth = {0}.\n", leaf);
 
     return score;
   }
