@@ -125,6 +125,8 @@ public class TicTacToe
     score = 1;
 
     System.Console.WriteLine("\nMaximum game tree depth = {0}.\n", leaf);
+    System.Console.WriteLine("\nThis is the grid inside of minimax:\n");
+    DrawColorGrid(char[] grid);
 
     return score;
   }
@@ -156,6 +158,9 @@ public class TicTacToe
           }
 
       player = 'O';
+
+      minimax(char[] grid, char player, int depth);
+
       Console.ForegroundColor = ConsoleColor.White;
       System.Console.WriteLine("\n\n{0}'s move. Which cell (1 thru 9) should {0} mark?", player);
       move = GrabMove(grid);
