@@ -1,3 +1,5 @@
+// Brute force version of Tic Tac Toe.
+//
 using System;
 
 public class TicTacToe
