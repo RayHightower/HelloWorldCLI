@@ -89,7 +89,6 @@ public class TicTacToe
     if (grid[1] == grid[5] && grid[5] == grid[9]) winner = true;
     if (grid[3] == grid[5] && grid[5] == grid[7]) winner = true;
 
-
     return winner;
   }
 
