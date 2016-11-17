@@ -1,7 +1,8 @@
 TTTcli
 ===
 
-Experimenting with C# on the command line.\n
+Experimenting with C# on the command line.
+
 Hello World + a brute-force version of Tic Tac Toe.
 
 
